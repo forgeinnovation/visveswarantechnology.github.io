@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,500&family=Lato:ital@1&family=Montserrat:wght@600&display=swap');
+
+body{
+    margin: 0;
+    scroll-behavior: smooth;
+    padding: 0;
+
+    --c1:#fff;
+    --c2: #509ABF;
+    --c3 : #FAA31A;
+    --font: 'Josefin Sans', sans-serif;
+
+    overflow-x: hidden;
+}
+
+.nav{
+    width: 100%;
+    display: flex;
+    height: 150px;
+    background-color: var(--c1);
+    justify-content: space-between;
+}
+.nav-logo{
+    height: min-content;
+    width: 50%;
+}
+.nav-links{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.nav-links a{
+    text-decoration: none;
+    text-transform: capitalize;
+    font-family: var(--font);
+    color: var(--c3);
+    animation-duration: 2s;
+
+}
+.nav-links a:hover{
+    text-decoration: underline;
+}
+
+.nav-logo img{
+    height: 140px;
+}
+
+
+/* nav contact */
+
+.nav-contact{
+    background-color: var(--c2);
+    padding: 10px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.nav-end{
+    width: 30%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+.nav-end a{
+    text-decoration: none;
+    color: var(--c1);
+
+}
+.social{
+    width: 20%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.social img{
+    width: 35px;
+}
+
+/* landing page */
+
+.landingpage,.about{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+.landingpage .content{
+    display: flex;
+    padding: 20px;
+    flex-direction: column;
+    width: 50%;
+    
+    justify-content: space-evenly;
+}
+.content p{
+    font-size: 40px;
+    color: var(--c2);
+    font-weight: bold;
+    text-align: left;
+}
+.content a{
+    background-color: var(--c3);
+    padding: 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    width: 200px;
+    text-align: center;
+    color: var(--c1);
+}
+.landingpage img{
+    width: 35%;
+}
+
+/* DASH */
+
+.dash{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.dash div{
+    padding: 10px;
+
+    width: 33%;
+    height: auto;
+    color: var(--c1);
+    font: var(--font);
+    font-weight: bolder;
+    font-size: 30px;
+    align-items: center;
+    justify-content: center;
+}
+.d1,.d3{
+    background-color: var(--c2);
+}
+.d2{
+    background-color: var(--c3);
+}
+
+/* about */
+
+
+.about img{
+    width: 40%;
+}
+
+.about-content{
+    display: flex;
+    align-items: center;
+}
+.about-content p{
+    color: var(--c2);
+    font-family: var(--font);
+    font-size: 18px;
+    text-transform: capitalize;
+    text-align: left;
+}
+
+/* free to reach us */
+
+.ftra{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sec{
+    width: 90%;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+    align-items: center;
+    background-color: var(--c2);
+    border-radius: 50px;
+    height: 80px;
+}
+.sec p{
+    color: var(--c1);
+    font-family: var(--font);
+    font-size: 40px;
+    text-align: center;
+
+}
+.sec a{
+    background-color: var(--c3);
+    padding: 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    width: 200px;
+    text-align: center;
+    color: var(--c1);
+    font-size: 22px;
+    text-transform: capitalize;
+    font-weight: bold;
+}
