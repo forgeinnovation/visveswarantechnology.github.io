@@ -1,5 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,500&family=Lato:ital@1&family=Montserrat:wght@600&display=swap');
 
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 3;
+    }
+}
 body{
     margin: 0;
     scroll-behavior: smooth;
@@ -9,10 +18,15 @@ body{
     --c2: #509ABF;
     --c3 : #FAA31A;
     --font: 'Josefin Sans', sans-serif;
-
-    overflow-x: hidden;
+    transition: 0.5s;
+    animation: fadeIn 0.9s linear;
+    font-family: var(--font);
+    overflow-x:hidden;
 }
 
+div{
+    overflow: hidden;
+}
 .nav{
     width: 100%;
     display: flex;
@@ -37,9 +51,12 @@ body{
     color: var(--c3);
     animation-duration: 2s;
 
+    transition: 0.3s linear;
+
 }
 .nav-links a:hover{
     text-decoration: underline;
+    transform:rotate3d(5px);
 }
 
 .nav-logo img{
@@ -51,7 +68,8 @@ body{
 
 .nav-contact{
     background-color: var(--c2);
-    padding: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     display: flex;
     width: 100%;
     justify-content: space-between;
@@ -194,3 +212,101 @@ body{
     text-transform: capitalize;
     font-weight: bold;
 }
+
+.social img {
+    width: 30px;
+    margin: 10px;
+    transition: 0.3s linear;
+}
+
+.social img:hover{
+    transform: scale(1.5);
+}
+/* mobile */
+@media (max-width : 800px) {
+    
+    .nav{
+        flex-direction: column;
+        width: 100%;
+    }
+    .nav-links{
+        width: 100%;
+    }
+    .nav-contact{
+        /* width: max-content; */
+        margin-top: 20px;
+    }
+    .social{
+        width: 100%;
+    }
+    .nav-end{
+        display: none;
+    }
+    .nav-logo{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .nav-logo img{
+        width: 25%;
+    }
+    
+    .landingpage img{
+        width: 40%;
+    }
+    .landingpage div p{
+        font-size: 18px;
+    }
+    .landingpage div a{
+        width: 100px;
+
+    }
+    /* dash */
+    .dash{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .dash div{
+        width: 95%;
+    }
+    .dash div p{
+        font-size: 22px;
+        font-family: var(--font);
+    }
+
+    /* about */
+
+    .about{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .about img{
+        width: 90%;
+    }
+    .about-content{
+        width: 90%;
+        margin-top: 0px;
+    }
+
+    /* free to reach us */
+
+    .ftra div{
+        border-radius: 0;
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+    }
+    .sec p{
+        font-size: x-large;
+    }
+    .sec a{
+        width: 150px;
+
+    }
+} 
