@@ -34,6 +34,21 @@
             </div>
 
         </div>
+        <div class="mob-nav">
+            <div class="mob-content">
+                <img src="./img/menu.png" onclick="toglenav();" alt="~">
+                <p>VISVESWARAN TECHNOLOGIES</p>
+            </div>
+
+            <div class="mob-links" id="mob-lnk">
+                <a href="./index.html">home</a>
+                <a href="#About">about</a>
+                <a href="#Project">Service</a>
+                <a href="#Team">team</a>
+                <a href="#Contact">contact</a>
+            </div>
+
+        </div>
         <!-- nav contact -->
 
         <div class="nav-contact">
@@ -108,7 +123,7 @@
         <!-- PROJECT -->
 
         <section id="Project">
-            <p class="ptit" >Our Projects</p>
+            <p class="ptit">Our Projects</p>
             <div class="showcase">
                 <div class="thumbnail thumbnail--s1">
                     <div class="thumbnail__overlay">
@@ -117,16 +132,18 @@
                 <div class="desc">
                     <p>SERVICE</p>
                     <h2>POS SYSTEM</h2>
-                    <p>Visweswaren Technology's POS system service optimizes business transactions with cutting-edge technology and seamless customer interactions.</p>
+                    <p>Visweswaren Technology's POS system service optimizes business transactions with cutting-edge
+                        technology and seamless customer interactions.</p>
 
                 </div>
             </div>
-            
+
             <div class="showcase showcase--inverted">
                 <div class="desc">
                     <p>DEVELOPMENT</p>
                     <h2>WEB DEV</h2>
-                    <P>Visweswaren Technology specializes in website development, creating responsive and functional websites to enhance your online presence.</P>
+                    <P>Visweswaren Technology specializes in website development, creating responsive and functional
+                        websites to enhance your online presence.</P>
                 </div>
                 <div class="thumbnail  --s2">
                     <div class="thumbnail__overlay">
@@ -141,7 +158,8 @@
                 <div class="desc">
                     <p>DESIGN</p>
                     <h2>UI / UX</h2>
-                   <P>Visweswaren Technology's UI/UX design expertise ensures an engaging and intuitive user experience, setting your digital products apart from the competition.</P>
+                    <P>Visweswaren Technology's UI/UX design expertise ensures an engaging and intuitive user
+                        experience, setting your digital products apart from the competition.</P>
                 </div>
             </div>
         </section>
@@ -176,17 +194,7 @@
                             </div>
                         </div>
 
-                        <div class="responsive-cell-block wk-desk-6 wk-ipadp-6 wk-mobile-12 wk-tab-12 card-container">
-                            <div class="card">
-                                <img class="card-img" src="./img/Dr.S.SARAVANAN.jpg">
-                                <p class="text-blk name">
-                                    Dr.S.SARAVANAN
-                                </p>
-                                <p class="text-blk position">
-                                    CO-FOUNDER
-                                </p>
-                            </div>
-                        </div>
+                        
 
                         <div class="responsive-cell-block wk-desk-6 wk-ipadp-6 wk-mobile-12 wk-tab-12 card-container">
                             <div class="card">
@@ -200,6 +208,17 @@
                             </div>
                         </div>
 
+                        <div class="responsive-cell-block wk-desk-6 wk-ipadp-6 wk-mobile-12 wk-tab-12 card-container">
+                            <div class="card">
+                                <img class="card-img" src="./img/Dr.S.SARAVANAN.jpg">
+                                <p class="text-blk name">
+                                    Dr.S.SARAVANAN
+                                </p>
+                                <p class="text-blk position">
+                                    CO-FOUNDER
+                                </p>
+                            </div>
+                        </div>
 
                         <div class="responsive-cell-block wk-desk-6 wk-ipadp-6 wk-mobile-12 wk-tab-12 card-container">
                             <div class="card">
@@ -221,6 +240,18 @@
                                 </p>
                                 <p class="text-blk position">
                                     HEAD RESEARCH AND DEVELOPMENT
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="responsive-cell-block wk-desk-6 wk-ipadp-6 wk-mobile-12 wk-tab-12 card-container">
+                            <div class="card">
+                                <img class="card-img" src="./img/person.jpg">
+                                <p class="text-blk name">
+                                   ER.BALAMURAGAN
+                                </p>
+                                <p class="text-blk position">
+                                HUMAN RESOURCE AND MANAGER
                                 </p>
                             </div>
                         </div>
@@ -320,7 +351,16 @@
         setTimeout(function () {
             document.getElementById('loader').style.display = 'none';
             document.getElementById('content').style.display = 'block';
-        }, 3000);
+        }, 250);
+
+        function toglenav(){
+            var can = document.getElementById("mob-lnk").style.display;
+            if(can == "none"){
+                document.getElementById("mob-lnk").style.display = "flex";
+            }else{
+                document.getElementById("mob-lnk").style.display = "none";
+            }
+        }
     </script>
 
 </body>

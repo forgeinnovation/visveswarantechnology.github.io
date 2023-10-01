@@ -3,6 +3,7 @@
 #content {
     display: none;
 }
+
 #loader {
     position: fixed;
     display: flex;
@@ -17,15 +18,18 @@
     align-items: center;
     z-index: 999;
 }
+
 #loader img {
     width: 150px;
     height: 150px;
 }
+
 #loader p {
     color: var(--c2);
 
 }
-.position{
+
+.position {
     text-transform: capitalize !important;
 }
 
@@ -36,6 +40,11 @@
 
     to {
         opacity: 3;
+    }
+}
+@keyframes opn-link {
+    to{
+        opacity: 1;
     }
 }
 
@@ -49,7 +58,7 @@ body {
     --c3: #FAA31A;
     --font: 'Josefin Sans', sans-serif;
     transition: 0.5s;
-    animation: fadeIn 0.9s linear;
+    animation: fadeIn 0.9s alternate;
     font-family: var(--font);
     overflow-x: hidden;
 }
@@ -99,6 +108,23 @@ div {
     height: 140px;
 }
 
+
+.mob-nav {
+    display: none;
+}
+
+
+.mob-content {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 30px 10px 30px 10px;
+    align-items: center;
+}
+
+.mob-content img {
+    width: 10%;
+}
 
 /* nav contact */
 
@@ -384,34 +410,37 @@ div {
 .f3 iframe {
     width: 90%;
 }
-.tt{
+
+.tt {
     color: var(--c3);
 }
+
 .footer-txt {
     margin: 10px;
     text-align: center;
     color: rgba(37, 36, 36, 0.685);
 }
-.card-img{
+
+.card-img {
     border-radius: 10px;
 }
 
 /* mobile */
 @media (max-width : 800px) {
 
-    .nav {
-        flex-direction: column;
-        width: 100%;
+
+    .nav-links {
+        display: none;
+        padding: 0;
+        margin: 0;
     }
 
-    .nav-links{
-        width: 100%;
+    .mob-content {
+        color: var(--c3);
+        font-size: 1em;
     }
-    .nav-links a{
-        font-size: 18px;
-    }
+
     .nav-contact {
-        /* width: max-content; */
         margin-top: 20px;
     }
 
@@ -430,8 +459,42 @@ div {
         align-items: center;
     }
 
-    .nav-logo img {
-        width: 25%;
+
+    .mob-nav {
+        display: flex;
+        flex-direction: column;
+        justify-self: center;
+        align-items: center;
+    }
+
+    .mob-links {
+        transition: .6s ease;
+
+        width: 90%;
+        display: none;
+        flex-direction: column;
+        text-align: center;
+        border: 1px solid var(--c2);
+        border-radius: 0px 40px 0px 40px;
+        transition: .6s ease-in-out;
+        animation: fadeIn .5s ease-in-out;
+        }
+
+    .mob-links a {
+        color: var(--c2);
+        text-decoration: none;
+        text-transform: capitalize;
+        border-top: 1px solid;
+        font-weight: 500;
+        font-size: 1.5em;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        transition: .5s ease;
+    }
+    .mob-links a:hover{
+        background-color: var(--c3);
+        border-color: var(--c3);
+        color: var(--c1);
     }
 
     .landingpage img {
@@ -543,6 +606,8 @@ div {
 
     .f3 iframe {
         align-items: center;
+        border-radius: 0px 40px 0px 40px;
+
     }
 
     .footer-txt {
