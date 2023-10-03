@@ -244,11 +244,12 @@ div {
     align-items: center;
 }
 
+
 .about-content p {
     color: var(--c2);
     font-family: var(--font);
     font-size: 18px;
-    text-transform: capitalize;
+    text-transform: none;
     text-align: left;
 }
 
@@ -498,11 +499,11 @@ div {
     }
 
     .landingpage img {
-        width: 40%;
+        width: 50%;
     }
 
     .landingpage div p {
-        font-size: 18px;
+        font-size: 13px;
     }
 
     .landingpage div a {
