@@ -61,6 +61,9 @@
 .--s3{
     background-image: url("../img/design.jpg");
 }
+.--s5{
+    background-image: url("../img/tetra.jpg");
+}
 .thumbnail__overlay {
     position: relative;
     padding-top: 8em;
