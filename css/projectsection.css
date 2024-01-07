@@ -64,6 +64,9 @@
 .--s5{
     background-image: url("../img/tetra.jpg");
 }
+.--s6{
+    background-image: url(../sites/animespetra/assets/images/banner-bg.png);
+}
 .thumbnail__overlay {
     position: relative;
     padding-top: 8em;
