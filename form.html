@@ -3,9 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Full Screen Web Page</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+        }
+    </style>
 </head>
 <body>
-    <h1>aokj</h1>
+
+<!-- Your webpage content goes here -->
+<h2>hellow world</h2>
+<button id="fullscreenButton"> Full Screen</button>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const element = document.documentElement;
+
+        // Function to request fullscreen
+        function openFullscreen() {
+            if (element.requestFullscreen) {
+                element.requestFullscreen();
+            } else if (element.mozRequestFullScreen) { // Firefox
+                element.mozRequestFullScreen();
+            } else if (element.webkitRequestFullscreen) { // Chrome, Safari and Opera
+                element.webkitRequestFullscreen();
+            } else if (element.msRequestFullscreen) { // IE/Edge
+                element.msRequestFullscreen();
+            }
+        }
+
+        // Trigger full screen on user interaction, e.g., button click
+        const fullscreenButton = document.getElementById('fullscreenButton');
+        fullscreenButton.addEventListener('click', openFullscreen);
+        
+    });
+</script>
+
 </body>
 </html>
