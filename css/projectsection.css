@@ -12,6 +12,16 @@
     align-items: center;
 }
 
+.desc p,h2{
+    font-size: large;
+    text-align: start;
+}
+.desc h2{
+    font-size: x-large;
+    text-decoration: underline;
+    color: var(--c2);
+}
+
 .ptit {
     text-align: center;
     width: 90%;
