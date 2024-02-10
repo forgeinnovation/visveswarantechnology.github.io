@@ -12,16 +12,6 @@
     align-items: center;
 }
 
-.desc p,h2{
-    font-size: large;
-    text-align: start;
-}
-.desc h2{
-    font-size: x-large;
-    text-decoration: underline;
-    color: var(--c2);
-}
-
 .ptit {
     text-align: center;
     width: 90%;
@@ -76,6 +66,10 @@
 }
 .--s6{
     background-image: url(../sites/animespetra/assets/images/banner-bg.png);
+}
+.--s7{
+    background-image: url(../sites/mankindfoundation/img/courses-2.jpg);
+    object-fit: contain;
 }
 .thumbnail__overlay {
     position: relative;

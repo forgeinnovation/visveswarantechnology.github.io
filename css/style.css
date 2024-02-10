@@ -455,6 +455,7 @@ div {
 .brand-wrap img{
     aspect-ratio: 2 / 2;
 }
+
 /* mobile */
 @media (max-width : 800px) {
 
