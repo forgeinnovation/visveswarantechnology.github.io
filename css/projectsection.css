@@ -37,6 +37,14 @@
     background: transparent;
     border: 1px solid var(--c3);
 }
+.desc h2{
+    font-size: x-large;
+    font-weight: bolder;
+}
+.desc p{
+    font-size: 18px;
+    text-align: center;
+}
 
 .thumbnail {
     position: absolute;

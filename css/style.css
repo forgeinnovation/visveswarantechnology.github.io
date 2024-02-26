@@ -198,7 +198,7 @@ div {
     text-align: left;
 }
 
-.content a {
+.content a,.btn {
     background-color: var(--c3);
     padding: 20px;
     border-radius: 25px;
@@ -366,7 +366,9 @@ div {
 #phone p:hover {
     filter: blur(0px);
 }
-
+.brand-wrap img{
+    aspect-ratio: 2 / 2;
+}
 
 /* footer */
 .bg-c3 {
